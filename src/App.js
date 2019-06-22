@@ -5,13 +5,9 @@ import Main from "../src/main/Main";
 function App() {
   return (
     <Router>
-      <div>
-        <Header />
-
-        <Route exact path="/" component={Main} />
-        <Route path="/about" component={About} />
-        <Route path="/topics" component={Topics} />
-      </div>
+      <Route path="/" component={Main} />
+      <Route path="/about" component={About} />
+      <Route path="/topics" component={Topics} />
     </Router>
   );
 }
@@ -45,22 +41,6 @@ function Topics({ match }) {
         render={() => <h3>Please select a topic.</h3>}
       />
     </div>
-  );
-}
-
-function Header() {
-  return (
-    <ul>
-      <li>
-        <Link to="/">Home</Link>
-      </li>
-      <li>
-        <Link to="/about">About</Link>
-      </li>
-      <li>
-        <Link to="/topics">Topics</Link>
-      </li>
-    </ul>
   );
 }
 
