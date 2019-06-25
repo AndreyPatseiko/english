@@ -1,8 +1,8 @@
 {
-  "name": "Advance App",
-  "short_name": "Advance",
-  "theme_color": "#e73328",
-  "background_color": "#fff",
+  "name": "Learn fucking English",
+  "short_name": "Learn FE",
+  "theme_color": "#000000",
+  "background_color": "#000000",
   "display": "standalone",
   "Scope": "/",
   "start_url": ".",
