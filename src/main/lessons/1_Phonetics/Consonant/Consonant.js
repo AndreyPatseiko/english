@@ -8,8 +8,8 @@ import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 
 // Tabs
-import ConsonantTextTab from "./Consonant/ConsonantTextTab";
-import ConsonantVideoTab from "./Consonant/ConsonantVideoTab";
+import ConsonantTextTab from "./tabs/ConsonantTextTab";
+import ConsonantVideoTab from "./tabs/ConsonantVideoTab";
 
 function TabContainer({ children, dir }) {
   return (
@@ -30,7 +30,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function FullWidthTabs() {
+export default function FullWidthTabs({ match }) {
   const classes = useStyles();
   const theme = useTheme();
   const [value, setValue] = React.useState(0);
@@ -53,8 +53,8 @@ export default function FullWidthTabs() {
           textColor="primary"
           variant="fullWidth"
         >
-          <Tab label="Text" />
-          <Tab label="Videos" />
+          <Tab label="Введение" />
+          <Tab label="Видео" />
         </Tabs>
       </AppBar>
       <SwipeableViews

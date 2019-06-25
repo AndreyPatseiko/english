@@ -2,6 +2,6 @@ import React from "react";
 
 export default () => (
   <div>
-    <h1>Video tab</h1>
+    <h1>vowel Text tab</h1>
   </div>
 );
