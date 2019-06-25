@@ -7,7 +7,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 import DrawerList from "./DrawerList/DrawerList";
 import PhoneticsCons from "./lessons/1_Phonetics/Consonant/Consonant";
 import PhoneticsVowel from "./lessons/1_Phonetics/Vowel/Vowel";
