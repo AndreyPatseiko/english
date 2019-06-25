@@ -4,8 +4,8 @@
   "theme_color": "#000000",
   "background_color": "#000000",
   "display": "standalone",
-  "Scope": "/",
-  "start_url": ".",
+  "scope": ".",
+  "start_url": "./index.html",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
@@ -48,5 +48,8 @@
       "type": "image/png"
     }
   ],
-  "splash_pages": null
+  "splash_pages": null,
+  "manifest_version": 2,
+  "version": "1.0",
+  "description": ""
 }
