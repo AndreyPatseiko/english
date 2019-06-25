@@ -6,6 +6,7 @@ import MotivationImg from "./motivation.png";
 export default () => {
   return (
     <div style={{ textAlign: "center", padding: "2em 0.5em" }}>
+      <h1>Hi Nigger!</h1>
       <img
         style={{ width: "100%", maxWidth: "300px" }}
         src={MotivationImg}
