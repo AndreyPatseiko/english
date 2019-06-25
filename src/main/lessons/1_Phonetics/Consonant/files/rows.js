@@ -23,143 +23,176 @@ import J from "../files/audio/j.mp3";
 import TH from "../files/audio/th.mp3";
 import THH from "../files/audio/thh.mp3";
 
-export default [
+export const rusAnalogs = [
   {
-    symbol: "[ r ]",
-    word: "ROBOT",
-    transcription: "[ robot ]",
-    audio: R
-  },
-  {
-    symbol: "[ h ]",
-    word: "HAT",
-    transcription: "[ hat ]",
-    audio: H
-  },
-  {
-    symbol: "[ f ]",
-    word: "FATE",
-    transcription: "[ fate ]",
-    audio: F
-  },
-  {
-    symbol: "[ v ]",
-    word: "VET",
-    transcription: "[ vet ]",
-    audio: V
+    symbol: "[ d ]",
+    word: "DOG",
+    transcription: "[ dɔːɡ ]",
+    rusSimilarly: "[ д ]",
+    audio: B
   },
   {
     symbol: "[ b ]",
     word: "BIG",
-    transcription: "[ big ]",
+    transcription: "[ bɪɡ ]",
+    rusSimilarly: "[ б ]",
     audio: B
+  },
+  {
+    symbol: "[ f ]",
+    word: "FATE",
+    rusSimilarly: "[ ф ]",
+    transcription: "[ feɪt ]",
+    audio: F
+  },
+  {
+    symbol: "[ ʒ ]",
+    word: "VISION",
+    transcription: "[ ˈvɪʒn ]",
+    rusSimilarly: "[ ж ] — мягкий",
+    audio: DJ
+  },
+  {
+    symbol: "[ dʒ ]",
+    rusSimilarly: "[ дж ] — мягкий",
+    word: "JUNE",
+    transcription: "[ dʒuːn ]",
+    audio: DDJ
   },
   {
     symbol: "[ g ]",
     word: "GREAT",
-    transcription: "[ great ]",
+    rusSimilarly: "[ г ]",
+    transcription: "[ ɡreɪt ]",
     audio: G
   },
   {
-    symbol: "[ p ]",
-    word: "PET",
-    transcription: "[ pet ]",
-    audio: P
+    symbol: "[ h ]",
+    word: "HAT",
+    rusSimilarly: "[ х ] — очень мягкий",
+    transcription: "[ hæt ]",
+    audio: H
   },
   {
     symbol: "[ k ]",
     word: "KITE",
-    transcription: "[ kite ]",
+    rusSimilarly: "[ к ] — с придыханием",
+    transcription: "[ kaɪt ]",
     audio: K
   },
   {
     symbol: "[ l ]",
     word: "LAMB",
-    transcription: "[ lamb ]",
+    rusSimilarly: "[ л ]",
+    transcription: "[ læm ]",
     audio: L
-  },
-  {
-    symbol: "[ t ]",
-    word: "TABLE",
-    transcription: "[ table ]",
-    audio: T
-  },
-  {
-    symbol: "[ s ]",
-    word: "SNAKE",
-    transcription: "[ snake ]",
-    audio: S
-  },
-  {
-    symbol: "[ z ]",
-    word: "ZEBRA",
-    transcription: "[ zebra ]",
-    audio: Z
   },
   {
     symbol: "[ m ]",
     word: "MOON",
-    transcription: "[ moon ]",
+    rusSimilarly: "[ м ]",
+    transcription: "[ muːn ]",
     audio: M
   },
   {
     symbol: "[ n ]",
     word: "NIGHT",
-    transcription: "[ night ]",
+    rusSimilarly: "[ н ]",
+    transcription: "[ naɪt ]",
     audio: N
   },
   {
-    symbol: "[ ŋ ]",
-    word: "INTERESTING",
-    transcription: "[ interesting ]",
-    audio: NH
+    symbol: "[ p ]",
+    word: "PET",
+    rusSimilarly: "[ п ] — с придыханием",
+    transcription: "[ pet ]",
+    audio: P
+  },
+  {
+    symbol: "[ r ]",
+    word: "ROBOT",
+    rusSimilarly: "[ р ] — мягкий",
+    transcription: "[ ˈroʊ.bɑːt ]",
+    audio: R
+  },
+  {
+    symbol: "[ s ]",
+    word: "SNAKE",
+    rusSimilarly: "[ с ]",
+    transcription: "[ sneɪk ]",
+    audio: S
+  },
+  {
+    symbol: "[ t ]",
+    word: "TABLE",
+    rusSimilarly: "[ т ] — с придыханием",
+    transcription: "[ ˈteɪbl ]",
+    audio: T
+  },
+  {
+    symbol: "[ z ]",
+    word: "ZEBRA",
+    rusSimilarly: "[ з ]",
+    transcription: "[ ˈziː.brə ]",
+    audio: Z
+  },
+  {
+    symbol: "[ v ]",
+    word: "VET",
+    rusSimilarly: "[ в ]",
+    transcription: "[ vet ]",
+    audio: V
   },
   {
     symbol: "[ ʃ ]",
     word: "SHAKE",
-    transcription: "[ ʃake ]",
+    rusSimilarly: "Средний между [ ш ] и [ щ ]",
+    transcription: "[ ʃeɪk ]",
     audio: SH
   },
   {
     symbol: "[ tʃ ]",
     word: "CHEESE",
-    transcription: "[ cheese ]",
+    rusSimilarly: "[ ч ]",
+    transcription: "[ tʃiːz ]",
     audio: TSH
-  },
-  {
-    symbol: "[ 3 ]",
-    word: "VISION",
-    transcription: "[ vi3on ]",
-    audio: DJ
-  },
-  {
-    symbol: "[ d3 ]",
-    word: "JUNE",
-    transcription: "[ d3une ]",
-    audio: DDJ
-  },
-  {
-    symbol: "[ w ]",
-    word: "WATER",
-    transcription: "[ wooter ]",
-    audio: W
   },
   {
     symbol: "[ j ]",
     word: "YOGURT",
-    transcription: "[ jogyrt ]",
+    rusSimilarly: "[ й ]",
+    transcription: "[ ˈjoʊ.ɡɚt ]",
     audio: J
+  }
+];
+
+export const withoutRusAnalogs = [
+  {
+    symbol: "[ θ ]",
+    word: "THING",
+    rusSimilarly: "зажмите язык между зубами и попробуйте произнести С",
+    transcription: "[ θɪŋ ]",
+    audio: THH
   },
   {
     symbol: "[ ð ]",
     word: "THERE",
-    transcription: "[ ðere ]",
+    rusSimilarly: "зажмите язык между зубами и попробуйте произнести З",
+    transcription: "[ ðer ]",
     audio: TH
   },
   {
-    symbol: "[ θ ]",
-    word: "THING",
-    transcription: "[ θing ]",
-    audio: THH
+    symbol: "[ ŋ ]",
+    word: "INTERESTING",
+    rusSimilarly: "слон говорит букву [ н ]",
+    transcription: "[ ˈɪntrəstɪŋ ]",
+    audio: NH
+  },
+  {
+    symbol: "[ w ]",
+    word: "WATER",
+    rusSimilarly: "[ в ]",
+    transcription: "[ ˈwɔːtər ]",
+    audio: W
   }
 ];

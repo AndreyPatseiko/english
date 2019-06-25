@@ -62,7 +62,7 @@ export default function Main({ history }) {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap>
-            It's English, MTF!
+            It's English, MF!
           </Typography>
         </Toolbar>
       </AppBar>

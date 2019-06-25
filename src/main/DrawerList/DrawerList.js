@@ -9,6 +9,7 @@ import Collapse from "@material-ui/core/Collapse";
 import Divider from "@material-ui/core/Divider";
 import IconButton from "@material-ui/core/IconButton";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
+import Button from "@material-ui/core/Button";
 
 // Constants
 import navList from "./DrawerList.constants";
@@ -36,12 +37,21 @@ export default ({ history, toggleDrawer }) => {
       onKeyDown={toggleDrawer(false)}
     >
       <div className={classes.drawerHeader}>
+        <Button
+          variant="outlined"
+          onMouseDown={toggleDrawer(false)}
+          onClick={() => {
+            history.push("/");
+          }}
+        >
+          Home
+        </Button>
         <IconButton onClick={toggleDrawer(false)}>
           <ChevronLeftIcon />
         </IconButton>
       </div>
       <Divider />
-      <List component="nav" aria-labelledby="nested-list-subheader">
+      <List style={{ padding: 0 }}>
         {navList.map(item => {
           const { insertNav } = item;
           if (!insertNav) {

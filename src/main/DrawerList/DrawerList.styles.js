@@ -19,9 +19,13 @@ export default makeStyles(theme => ({
     alignItems: "center",
     padding: "0 8px",
     ...theme.mixins.toolbar,
-    justifyContent: "flex-end"
+    justifyContent: "space-between"
   },
   listIcon: {
     minWidth: "36px"
+  },
+  menuCaption: {
+    margin: 0,
+    paddingLeft: "1em"
   }
 }));
