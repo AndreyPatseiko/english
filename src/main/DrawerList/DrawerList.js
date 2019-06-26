@@ -22,9 +22,7 @@ export default ({ history, toggleDrawer }) => {
     location: { pathname }
   } = history;
 
-  const [openId, setOpen] = React.useState(
-    pathname.substr(0, pathname.lastIndexOf("/"))
-  );
+  const [openId, setOpen] = React.useState(false);
 
   const collapseTrigger = id => {
     setOpen(openId === id ? null : id);
