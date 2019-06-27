@@ -1,9 +1,6 @@
 import { makeStyles } from "@material-ui/core/styles";
 
-export default makeStyles(theme => ({
-  list: {
-    width: 300
-  },
+export default makeStyles(theme => ({ 
   fullList: {
     width: "auto"
   },

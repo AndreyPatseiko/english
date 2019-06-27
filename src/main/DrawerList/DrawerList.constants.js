@@ -1,10 +1,7 @@
-import React from "react";
-import InboxIcon from "@material-ui/icons/MoveToInbox";
-
 export default [
   {
     title: "1. Transcription",
-    icon: <InboxIcon />,
+    icon: "gesture",
     parentPath: "/phonetics",
     insertNav: [
       {
@@ -19,7 +16,7 @@ export default [
   },
   {
     title: "2. The technique of memorizing words",
-    icon: <InboxIcon />,
+    icon: "save",
     parentPath: "/technic",
     insertNav: [
       {

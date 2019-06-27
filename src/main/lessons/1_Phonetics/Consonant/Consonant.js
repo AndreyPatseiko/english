@@ -1,23 +1,7 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core/styles";
-import Typography from "@material-ui/core/Typography";
-
-// Tabs
-import ConsonantTextTab from "./ConsonantTable";
-
-function TabContainer({ children, dir }) {
-  return (
-    <Typography component="div" dir={dir} style={{ padding: 8 * 3 }}>
-      {children}
-    </Typography>
-  );
-}
-
-TabContainer.propTypes = {
-  children: PropTypes.node.isRequired,
-  dir: PropTypes.string.isRequired
-};
+import { rusAnalogs, withoutRusAnalogs } from "./files/rows";
+import ConsonantTable from "../ConsonantTable";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -26,12 +10,15 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function FullWidthTabs({ match }) {
+export default ({ match }) => {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
-      <ConsonantTextTab />
+      <ConsonantTable
+        rusAnalogs={rusAnalogs}
+        withoutRusAnalogs={withoutRusAnalogs}
+      />
     </div>
   );
-}
+};

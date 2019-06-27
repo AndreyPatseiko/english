@@ -7,8 +7,7 @@ import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
 
-import { rusAnalogs, withoutRusAnalogs } from "./files/rows";
-import AudioPlayerSimple from "../../../components/AudioPlayerSimple";
+import AudioPlayerSimple from "../../components/AudioPlayerSimple";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -37,7 +36,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function SimpleTable() {
+export default function SimpleTable({ rusAnalogs, withoutRusAnalogs }) {
   const classes = useStyles();
 
   return (

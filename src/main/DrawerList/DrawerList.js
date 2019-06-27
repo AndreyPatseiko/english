@@ -1,7 +1,6 @@
 import React from "react";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import ExpandLess from "@material-ui/icons/ExpandLess";
 import ExpandMore from "@material-ui/icons/ExpandMore";
@@ -10,6 +9,7 @@ import Divider from "@material-ui/core/Divider";
 import IconButton from "@material-ui/core/IconButton";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import Button from "@material-ui/core/Button";
+import Icon from "@material-ui/core/Icon";
 
 // Constants
 import navList from "./DrawerList.constants";
@@ -32,7 +32,6 @@ export default ({ history, toggleDrawer }) => {
 
   return (
     <div
-      className={classes.list}
       role="presentation"
       onKeyDown={toggleDrawer(false)}
     >
@@ -65,9 +64,7 @@ export default ({ history, toggleDrawer }) => {
                 }}
               >
                 {item.icon ? (
-                  <ListItemIcon className={classes.listIcon}>
-                    {item.icon}
-                  </ListItemIcon>
+                  <Icon className={classes.listIcon}>{item.icon}</Icon>
                 ) : null}
                 <ListItemText primary={item.title} />
               </ListItem>
@@ -80,9 +77,7 @@ export default ({ history, toggleDrawer }) => {
                   onClick={() => collapseTrigger(item.parentPath)}
                 >
                   {item.icon ? (
-                    <ListItemIcon className={classes.listIcon}>
-                      {item.icon}
-                    </ListItemIcon>
+                    <Icon className={classes.listIcon}>{item.icon}</Icon>
                   ) : null}
                   <ListItemText primary={item.title} />
                   {openId === item.title ? <ExpandLess /> : <ExpandMore />}
