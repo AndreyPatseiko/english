@@ -28,8 +28,7 @@ export const rusAnalogs = [
     symbol: "[ d ]",
     word: "DOG",
     transcription: "[ dɔːɡ ]",
-    rusSimilarly: "[ д ]",
-    audio: B
+    rusSimilarly: "[ д ]"
   },
   {
     symbol: "[ b ]",

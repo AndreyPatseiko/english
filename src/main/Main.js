@@ -75,7 +75,6 @@ export default function Main({ history }) {
       {/* ──── Routers ─────────────────────────────────────────────────────────────────────────── */}
       <main className={classes.content}>
         <div className={classes.toolbar} />
-
         <Route exact path="/" component={StartPage} />
         <Route path="/phonetics/consonant" component={PhoneticsCons} />
         <Route path="/phonetics/vowel" component={PhoneticsVowel} />

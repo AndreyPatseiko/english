@@ -7,22 +7,32 @@ import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
 
-import { rusAnalogs, withoutRusAnalogs } from "../files/rows";
-import AudioPlayerSimple from "../../../../components/AudioPlayerSimple";
+import { rusAnalogs, withoutRusAnalogs } from "./files/rows";
+import AudioPlayerSimple from "../../../components/AudioPlayerSimple";
 
 const useStyles = makeStyles(theme => ({
   root: {
     width: "100%",
+    maxWidth: "800px",
+    margin: "0 auto"
+  },
+  table: {
     marginTop: theme.spacing(3),
-    overflowX: "auto"
+    width: "100%"
   },
   td: {
     padding: "5px",
     "&:nth-of-type(2)": {
-      minWidth: "55px"
+      width: "105px",
+      textAlign: "center"
     },
     "&:first-child": {
-      minWidth: "50px"
+      width: "50px",
+      textAlign: "center"
+    },
+    "&:last-child": {
+      width: "50px",
+      textAlign: "center"
     }
   }
 }));
@@ -31,9 +41,9 @@ export default function SimpleTable() {
   const classes = useStyles();
 
   return (
-    <div>
+    <div className={classes.root}>
       <p>Don't have rus analogs.</p>
-      <Paper className={classes.root}>
+      <Paper className={classes.table}>
         <Table>
           <TableHead>
             <TableRow>

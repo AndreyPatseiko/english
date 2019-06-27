@@ -22,7 +22,9 @@ export default ({ history, toggleDrawer }) => {
     location: { pathname }
   } = history;
 
-  const [openId, setOpen] = React.useState(false);
+  const [openId, setOpen] = React.useState(
+    pathname.substr(0, pathname.lastIndexOf("/"))
+  );
 
   const collapseTrigger = id => {
     setOpen(openId === id ? null : id);
@@ -37,8 +39,8 @@ export default ({ history, toggleDrawer }) => {
       <div className={classes.drawerHeader}>
         <Button
           variant="outlined"
-          onMouseDown={toggleDrawer(false)}
-          onClick={() => {
+          onMouseUp={toggleDrawer(false)}
+          onMouseDown={() => {
             history.push("/");
           }}
         >
