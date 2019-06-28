@@ -11,22 +11,26 @@ import A from "../files/audio/a.mp3";
 import AA from "../files/audio/aa.mp3";
 import OO from "../files/audio/oo.mp3";
 import EE from "../files/audio/ee.mp3";
+// Diphthongs
 import AI from "../files/audio/ai.mp3";
-import EI from "../files/audio/ei.mp3";
 import OI from "../files/audio/oi.mp3";
+import EI from "../files/audio/ei.mp3";
 import AU from "../files/audio/au.mp3";
-import OU from "../files/audio/au.mp3";
+import OU from "../files/audio/ou.mp3";
+import E_ER from "../files/audio/e_er.mp3";
+import I_ER from "../files/audio/i_er.mp3";
+import U_ER from "../files/audio/u_er.mp3";
 
 export const rusAnalogs = [
   {
-    symbol: "[ Λ ]",
+    symbol: "[ ʌ ]",
     word: "FUN",
     transcription: "[ fʌn ]",
     rusSimilarly: "[ а ] — короткий",
     audio: A
   },
   {
-    symbol: "[ a: ]",
+    symbol: "[ ɑː ]",
     word: "FAR",
     transcription: "[ fɑːr ]",
     rusSimilarly: "[ а ] — долгий",
@@ -50,7 +54,7 @@ export const rusAnalogs = [
 
   {
     symbol: "[ ɔ ] [ ɒ ]",
-    rusSimilarly: "[ о ] — короткий",
+    rusSimilarly: "[ о ] — короткий. КОТ",
     word: "POT",
     transcription: "[ pɒt ]",
     audio: O
@@ -92,19 +96,20 @@ export const rusAnalogs = [
     transcription: "[ sɜːf ]",
     audio: EE
   },
-  {
-    symbol: "[ əʊ ]",
-    word: "NOSE",
-    rusSimilarly: "[ оу ]",
-    transcription: "[ nəʊz ]",
-    audio: OU
-  },
+
   {
     symbol: "[ aʊ ]",
     word: "NOW",
     rusSimilarly: "[ ау ]",
     transcription: "[ naʊ ]",
     audio: AU
+  },
+  {
+    symbol: "[ əʊ ]",
+    word: "NOSE",
+    rusSimilarly: "[ оу ]",
+    transcription: "[ nəʊz ]",
+    audio: OU
   },
   {
     symbol: "[ ai ]",
@@ -114,6 +119,13 @@ export const rusAnalogs = [
     audio: AI
   },
   {
+    symbol: "[ ɔi ]",
+    word: "BOY",
+    rusSimilarly: "[ ой ]",
+    transcription: "[ bɔɪ ]",
+    audio: OI
+  },
+  {
     symbol: "[ ei ]",
     word: "LATE",
     rusSimilarly: "[ эй ]",
@@ -121,12 +133,27 @@ export const rusAnalogs = [
     audio: EI
   },
   {
-    symbol: "[ ɔi ]",
-    word: "BOY",
-    rusSimilarly: "[ ой ]",
-    transcription: "[ bɔɪ ]",
-    audio: OI
-  }
+    symbol: "[ eə ] [ ɜə ]",
+    word: "FAIR",
+    rusSimilarly: "[ еэ ]",
+    transcription: "[ feə(r) ]",
+    audio: E_ER
+  },
+  {
+    symbol: "[ iə ]",
+    word: "HERE",
+    rusSimilarly: "[ иэ ]",
+    transcription: "[ hɪə(r) ]",
+    audio: I_ER
+  },
+  {
+    symbol: "[ ʊə ] [ uə ]",
+    word: "SURE",
+    rusSimilarly: "[ уэ ]",
+    transcription: "[ ʃʊə(r) ]",
+    audio: U_ER
+  },
+ 
 ];
 
 export const withoutRusAnalogs = [

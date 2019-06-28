@@ -7,7 +7,7 @@ import ConsonantTable from "../ConsonantTable";
 const useStyles = makeStyles(theme => ({
   root: {
     backgroundColor: theme.palette.background.paper,
-    padding: "1em 2em"
+    padding: "1em"
   }
 }));
 
@@ -22,4 +22,4 @@ export default ({ match }) => {
       />
     </div>
   );
-}
+};

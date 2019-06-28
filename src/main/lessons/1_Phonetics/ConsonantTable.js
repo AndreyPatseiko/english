@@ -27,7 +27,8 @@ const useStyles = makeStyles(theme => ({
     },
     "&:first-child": {
       width: "50px",
-      textAlign: "center"
+      textAlign: "center",
+      whiteSpace: "nowrap"
     },
     "&:last-child": {
       width: "50px",
@@ -60,7 +61,9 @@ export default function SimpleTable({ rusAnalogs, withoutRusAnalogs }) {
                 </TableCell>
                 <TableCell component="td" className={classes.td}>
                   <p style={{ margin: 0 }}>{row.word}</p>
-                  <p style={{ margin: 0 }}>{row.transcription}</p>
+                  <p style={{ margin: 0, whiteSpace: "nowrap" }}>
+                    {row.transcription}
+                  </p>
                 </TableCell>
                 <TableCell component="td" className={classes.td}>
                   {row.rusSimilarly}
@@ -93,7 +96,9 @@ export default function SimpleTable({ rusAnalogs, withoutRusAnalogs }) {
                 </TableCell>
                 <TableCell component="td" className={classes.td}>
                   <p style={{ margin: 0 }}>{row.word}</p>
-                  <p style={{ margin: 0 }}>{row.transcription}</p>
+                  <p style={{ margin: 0, whiteSpace: "nowrap" }}>
+                    {row.transcription}
+                  </p>
                 </TableCell>
                 <TableCell component="td" className={classes.td}>
                   {row.rusSimilarly}
