@@ -2,7 +2,7 @@
   "name": "english",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://andreypatseiko.github.io/english/",
+  "homepage": "https://english-simple-course.firebaseapp.com",
   "dependencies": {
     "@material-ui/core": "^4.1.1",
     "@material-ui/icons": "^4.2.0",
@@ -17,6 +17,7 @@
     "build": "react-scripts build",
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d build",
+    "deploy-to-fb": "yarn build && firebase deploy",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
