@@ -1,11 +1,16 @@
-import React from "react";
-import { BrowserRouter, Route, Link } from "react-router-dom";
-import Main from "../src/main/Main";
+import React from 'react';
+import {BrowserRouter, Route, Link, Switch} from 'react-router-dom';
+import Main from '../src/main/Main';
+import Auth from '../src/auth/pages/LoginPage';
 
-function App() {
+function App () {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
-      <Route path="/" component={Main} />
+      <Switch>
+        {/* <Route path="/" component={Main} /> */}
+        <Route path="/auth" component={Auth} />
+      </Switch>
+
       {/* <Route path="/about" component={About} /> */}
       {/* <Route path="/topics" component={Topics} /> */}
     </BrowserRouter>
